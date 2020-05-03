@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SOURCE_EXTRACT_LOAD_ODS"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{D380597D-6378-443C-B692-0EB7EC0FE115}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{DFF2F9A4-2FD6-42C2-B349-604AC7249A4D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
