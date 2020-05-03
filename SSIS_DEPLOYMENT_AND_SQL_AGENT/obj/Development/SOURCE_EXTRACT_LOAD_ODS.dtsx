@@ -11,10 +11,22 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SOURCE_EXTRACT_LOAD_ODS"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{CE053B2F-FEE2-40B2-B075-8952D53E9D0A}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{83813DDC-B6EB-4234-A08F-9218B80CF960}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{8856E1B4-F38A-4902-9346-12D0E3F9D3D9}"
+      DTS:ObjectName="LOOKBACK_DAYS"
+      DTS:Required="True">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">14</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables />
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>

@@ -26,11 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-U8PAEJC</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAT3YJsXdrp0eieYQ39m25ogAAAAACAAAAAAAQZgAAAAEAACAAAABpHo0hOYXmetZqjxHkZEb7UuxNPifUnP6gAUOmwdUXZwAAAAAOgAAAAAIAACAAAAANPmmffzClXL100/ir3zllc4896LWpYO+L7TxJeKtWd5AAAAAU/IhAtyjjyZ2VlsWg5MGHg3qz/WMjX1St6ZKJ8XZUIjQoxWZEXfOExvL580zBqRL5ENLVa2GALX0qNy/N1U6SDcZ6F0KobMju0kFil9Y4W3Ljrbl5yWKzYqI/HWDJ4S+XPd8rMzq5yPElteXDh7e07Os18CxTfpxNskN4kyZd5JFslCubEQEAzWzcy44bD2pAAAAAjX984VdMBm29R1eHk5FGwnk3nYFNUts5IueC+hUqTiNi3Ui3e4lBgCkklcyz/O9mB9fB8rZGyTg/NLejLaL0gw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAT3YJsXdrp0eieYQ39m25ogAAAAACAAAAAAAQZgAAAAEAACAAAADRoW6ecdUJzuD+t+V9Vqw5LtyNYQt/ry7VhwndFY81JAAAAAAOgAAAAAIAACAAAADVGhOUUP4P0jV6XZRkxsJWqoPhHjB5pQWlrbo2szp1mJAAAAByh0m+OSZUXYlyxR+XlSXcwkVIj2UM/m5U4DqZ6zKnC7Yn/qSNnX4nVI5K6Wxjz1UJHNLBPPDsSJILkxi+bQdAtZHPFc7kbYW+hN1dBy9ed+DsRZ25q5p+d6ACrhr+P6IOt1KCbut4+2d9tbYeXeH7OtD3zyK5ICL0OKc4gmiUKESy+is1JJLCNJVrhnBC1dpAAAAAF7Cd/6il6LPwjKkaoCRWj7IZZM09gces7cDyJh1TPeHoOpSjjYa7xVuGvJpuwPWmcEKwTwp0YWsv3aGdnHgR/g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="SOURCE_EXTRACT_LOAD_ODS.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="EXTRACT_AND_LOAD_LOANS_FUNDED.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="OLTP_SOURCE.conmgr" />
@@ -192,16 +193,63 @@
                 <SSIS:Property SSIS:Name="Name">SOURCE_EXTRACT_LOAD_ODS</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">6</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{CE053B2F-FEE2-40B2-B075-8952D53E9D0A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{83813DDC-B6EB-4234-A08F-9218B80CF960}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
-              <SSIS:Parameters />
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="LOOKBACK_DAYS">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{8856E1B4-F38A-4902-9346-12D0E3F9D3D9}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">1</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">14</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="EXTRACT_AND_LOAD_LOANS_FUNDED.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{8417FC4A-77A5-4E2C-989D-61EA03DE0928}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">EXTRACT_AND_LOAD_LOANS_FUNDED</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BD1F9062-6B9D-440A-9962-516E44A30A12}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters>
+                <SSIS:Parameter SSIS:Name="LOOKBACK_DAYS">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{944A8BC6-2E23-46D8-83CC-3692F479BED8}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">1</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">14</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+              </SSIS:Parameters>
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
