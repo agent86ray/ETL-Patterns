@@ -5,18 +5,30 @@ VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "pubs-Database", "pubs-Database\pubs-Database.sqlproj", "{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}"
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_DEPLOYMENT_AND_SQL_AGENT", "SSIS_DEPLOYMENT_AND_SQL_AGENT\SSIS_DEPLOYMENT_AND_SQL_AGENT.dtproj", "{65341CDA-473A-49A1-B6B4-EF788B888FCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Development|Any CPU.Deploy.0 = Debug|Any CPU
 		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{80B45774-4D4A-4064-8C6E-F56DC0FB57D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{65341CDA-473A-49A1-B6B4-EF788B888FCF}.Debug|Any CPU.ActiveCfg = Development
+		{65341CDA-473A-49A1-B6B4-EF788B888FCF}.Debug|Any CPU.Build.0 = Development
+		{65341CDA-473A-49A1-B6B4-EF788B888FCF}.Development|Any CPU.ActiveCfg = Development
+		{65341CDA-473A-49A1-B6B4-EF788B888FCF}.Development|Any CPU.Build.0 = Development
+		{65341CDA-473A-49A1-B6B4-EF788B888FCF}.Release|Any CPU.ActiveCfg = Development
+		{65341CDA-473A-49A1-B6B4-EF788B888FCF}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
